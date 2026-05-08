@@ -9,7 +9,9 @@ let DarkMode = false;
 const body = document.querySelector('body'); 
 const toggleBtn = document.querySelector('#toggle');
 const heading = document.querySelector('#main-heading');
-const description = document.querySelector('#description');
+const description = document.querySelector
+('#description');
+const image = document.querySelector('#image');
 
 //now we can change styles & attributes for these elements 
 heading.style.color = "darkblue"; //JS wrote CSS code...
@@ -31,6 +33,11 @@ function toggleMode() {
          description.textContent = "Dark mode is on ";
          toggleBtn.textContent = "Switch to Light Mode";
          toggleBtn.style.background = "purple";
+         image.src = "BWL.jpeg";
+         body.style.fontFamily = "arial";
+         heading.style.fontFamily = "comic sans ms";
+         image.style.filter = "brightness(25%)";
+         toggleBtn.style.color = "grey";
 
       }
       else {
@@ -41,6 +48,11 @@ function toggleMode() {
          description.textContent = "Light mode is on";
          toggleBtn.textContent = "Switch to Dark Mode";
          toggleBtn.style.backgroundColor = "lightblue";
+         image.src = "BWLlion.jpg";
+         body.style.fontFamily = "comic sans ms";
+         heading.style.fontFamily = "arial";
+         image.style.filter = "brightness(100%)";
+         toggleBtn.style.color = "black";
       }
 }
 // Attach the function to the button's click event 
