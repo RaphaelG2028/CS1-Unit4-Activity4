@@ -57,3 +57,27 @@ function toggleMode() {
 }
 // Attach the function to the button's click event 
 toggleBtn.addEventListener('click', toggleMode);
+
+
+//REVIEW
+//1. select the new elemnt on the page (by id)
+const hackerBtn = document.querySelector('#hacker');
+//2. Attach click to event listener to the button
+hackerBtn.addEventListener('click', setHacker);
+//3. Difine the function that triggers when clicked 
+function setHacker() {
+   console.log("hacker mode activated");
+   body.style.background = "black";
+   body.style.color = "green";
+   body.style.fontFamily = "monospace";
+   description.textContent = "Hacker mode is on";
+}
+
+
+//Extra button to remoce the site 
+const removeBtn = document.querySelector('#removeSite');
+removeBtn.addEventListener('click', removeSite);
+function removeSite() {
+   console.log("removing site");
+   document.body.innerHTML = "<h1>;)</h1>";
+}
