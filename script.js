@@ -38,6 +38,7 @@ function toggleMode() {
          heading.style.fontFamily = "comic sans ms";
          image.style.filter = "brightness(25%)";
          toggleBtn.style.color = "grey";
+         heading.style.textShadow = "2px 2px 5px red";
 
       }
       else {
@@ -53,6 +54,7 @@ function toggleMode() {
          heading.style.fontFamily = "arial";
          image.style.filter = "brightness(100%)";
          toggleBtn.style.color = "black";
+         heading.style.textShadow = "2px 2px 5px teal";
       }
 }
 // Attach the function to the button's click event 
@@ -71,6 +73,7 @@ function setHacker() {
    body.style.color = "green";
    body.style.fontFamily = "monospace";
    description.textContent = "Hacker mode is on";
+   body.style.backgroundImage = "url('https://bostoninstituteofanalytics.b-cdn.net/wp-content/uploads/2025/06/image-168.jpg')";
 }
 
 
