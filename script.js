@@ -12,6 +12,7 @@ const heading = document.querySelector('#main-heading');
 const description = document.querySelector
 ('#description');
 const image = document.querySelector('#image');
+const emoji = document.querySelector('#emoji');
 
 //now we can change styles & attributes for these elements 
 heading.style.color = "darkblue"; //JS wrote CSS code...
@@ -74,6 +75,7 @@ function setHacker() {
    body.style.fontFamily = "monospace";
    description.textContent = "Hacker mode is on";
    body.style.backgroundImage = "url('https://bostoninstituteofanalytics.b-cdn.net/wp-content/uploads/2025/06/image-168.jpg')";
+   emoji.classList.add("animated");
 }
 
 
